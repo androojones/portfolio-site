@@ -1,0 +1,56 @@
+@import "base";
+
+h1 {
+	font-family: $header-font-family;
+	font-weight: $medium;
+	color: $gold;
+	font-size: $header-font-size;
+	margin: 0px;
+	@media screen and (min-width: 1200px) {
+		font-size: 120px;
+	}
+}
+
+h2 {
+	color: $gold;
+	font-weight: $light;
+	font-size: 40px;
+	font-family: $header-font-family;
+    letter-spacing: 2px;
+    margin: 0px;
+    @media screen and (max-width: 750px) {
+    	font-size: 30px;
+    }
+}
+
+h3 {
+	margin: 0px;
+}
+
+p {
+	color: $grey;
+	font-family: $base-font-family;
+	font-weight: $regular;
+    letter-spacing: 1.5px;
+    line-height: 1.8em;
+    margin: 0px;
+    @media screen and (max-width: 750px) {
+    	font-size: 15px;
+    }
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+span.text--strike {
+	text-decoration: line-through;
+}
+
+#fp-nav ul li .fp-tooltip {
+	color: $grey !important;
+	font-family: $header-font-family !important;
+    top: -10px !important;
+    font-size: 20px !important;
+}

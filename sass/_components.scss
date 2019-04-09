@@ -1,0 +1,84 @@
+body {
+    background-color: $grey--light;
+}
+
+.card {
+    background: #fff;
+    width: calc(100% - 75px);
+    height: calc(100% - 75px);
+    max-width: 1280px;
+    max-height: 1200px;
+    @media screen and (max-width: 750px) {
+        width: calc(100% - 5%);
+    }
+}
+
+.card.flex--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card_container {
+	width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+	-ms-flex-align: center;
+    align-items: center;	
+}
+
+.card_container.card--height {
+    height: 100vh;
+    min-height: 500px;
+}
+
+.port__card {
+    width: calc(50% - 1%);
+    min-width: 350px;
+    height: calc(100vh - 75px);
+    max-height: 800px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+    transition: .3s; 
+    margin-top: 37.5px; 
+    transition: all 0.2s ease-in-out; 
+    &:hover {
+        box-shadow: none;
+    } 
+    &:nth-child(3n+) {
+        margin: 37.5px 0px; 
+    }  
+    @media screen and (max-width: 775px) {
+        width: 100%;
+        min-width: 95%;
+        height: auto;
+    }
+    @media screen and (max-height: 700px) {
+        min-height: 600px;
+    }
+}
+
+button {
+    background-color: $gold;
+    padding: 10px 20px;
+    border: 0px;
+    width: 150px;
+    margin-bottom: 20px;
+    font-size: inherit;
+    font-family: $header-font-family;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background-color: rgba(199,172,117,.7);
+    }
+    @media screen and (max-width: 750px) {
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+}
